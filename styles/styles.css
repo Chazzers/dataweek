@@ -116,6 +116,7 @@ circle {
 label {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .legend-item p {
