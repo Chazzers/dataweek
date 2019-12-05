@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body>
+		<div class="viz-container">
+			<div class="text-container">
+				<div class="text">
+					<h1>De realiteit</h1>
+					<h2>Van het overnachtingsbeleid</h2>
+					<p>
+						De gemeente wil de overlast van toerisme terugbrengen door een overnachtingsbeleid toe te passen waarbij in bepaalde delen van de stad geen hotels meer gebouwd mogen worden. Maar hier zien juist de bewoners van Amsterdam een kans om goed geld te verdienen door hun eigen woning te verhuren via Airbnb. Helaas zijn ook de regels voor Airbnb aangescherpt. Maar houdt iedereen zich aan de nieuwe regels? Wij hebben dit onderzocht en de resultaten in kaart gebracht.
+					</p>
+				</div>
+				<div class="legend">
+					<div class="legend-item">
+						<label for="airbnb">
+							<div class="color-container">
+								<div id="airbnb-color"></div>
+							</div>
+							<p>Airbnb's</p>
+						</label>
+						<input type="checkbox" name="airbnb" value="airbnb" checked id="airbnb">
+					</div>
+					<div class="legend-item">
+						<label for="hotel">
+							<div class="color-container">
+								<div id="hotel-color"></div>
+							</div>
+							<p>Hotels</p>
+						</label>
+						<input type="checkbox" name="hotel" value="hotel" checked id="hotel">
+					</div>
+					<div class="legend-item flex">
+						<div class="color-container">
+							<div id="hotel-zone-color"></div>
+						</div>
+						<p>Hotelontwikkeling toegestaan</p>
+					</div>
+				</div>
+			</div>
+			<div class="svg-container">
+				<svg width="1800" height="1800"></svg>
+			</div>
+		</div>
+		<div class="viz-info">
+			<div class="viz-info-content">
+			</div>
+		</div>
+
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+		<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+		<script src="js/index.js">
+		</script>
+	</body>
+</html>

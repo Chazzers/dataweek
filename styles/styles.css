@@ -1,0 +1,129 @@
+body {
+  background-color: #212121;
+  color: white;
+  font-family: "Arial", sans-serif;
+  margin: 3em;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.viz-container {
+  position: relative;
+  padding: 1em;
+}
+
+.viz-container .text-container {
+  position: absolute;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.viz-container .text-container .text p {
+  max-width: 250px;
+}
+
+.viz-container .text-container .text {
+
+}
+
+.viz-container .text-container .legend {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.viz-container .text-container .legend .legend-item {
+  padding-top: 1em;
+}
+
+.viz-container .text-container .legend .legend-item .color-container {
+  flex: 0.3;
+}
+
+#airbnb-color {
+  background-color: #ff5a5f;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+}
+
+#hotel-color {
+  background-color: #fff;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+}
+
+#hotel-zone-color {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 20px;
+  height: 12px;
+}
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+.viz-container .svg-container {
+  position: absolute;
+  left: 8%;
+  top: -1480%;
+}
+
+.viz-info {
+  background-color: #212121;
+  position: absolute;
+  margin-left: -3em;
+  bottom: -5px;
+  width: 100%;
+  height: 255px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4%;
+}
+
+.viz-info-content {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background: url('../images/facts-dataweek.svg') no-repeat;
+}
+
+circle {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.legend-item p {
+  margin: 0;
+  font-size: 12px;
+  flex: 1;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
